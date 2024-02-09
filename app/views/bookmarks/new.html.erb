@@ -1,0 +1,5 @@
+<h1>Add a movie to your <%= @list.name %> list</h1>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+<%= f.input :comment, placeholder: 'Your comment' %>
+<%= f.submit %>
+<% end %>
